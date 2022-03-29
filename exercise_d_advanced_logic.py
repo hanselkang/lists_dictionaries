@@ -31,6 +31,21 @@ while i < len(numbers):
 #
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
 
+total = 0
+switch_on = True
+for num in numbers:
+    while switch_on:
+        if num != 6:
+            total += num
+            break
+        else:
+            switch_on = False
+    while not switch_on:
+        if num != 7:
+            break
+        else:
+            switch_on = True
+print(total)
 
 # 5. HARD! Print the sum of the numbers.
 #    Except the number 13 is very unlucky, so it does not count.
@@ -38,3 +53,13 @@ while i < len(numbers):
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5.
+
+total = 0
+luck = True
+numbers[numbers.index(13)+1] = 0
+for num_bad in numbers:
+    if num_bad != 13:
+        total += num_bad
+    else:
+        pass
+print(total)
