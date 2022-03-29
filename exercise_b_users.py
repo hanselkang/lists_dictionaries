@@ -81,3 +81,4 @@ users["Erik"]["pets"].append({
     "species": "dog"
 })
 # 10. Add another person to the users dictionary
+users.update({"Hansel": "No information yet"})
