@@ -62,4 +62,5 @@ for num_bad in numbers:
         total += num_bad
     else:
         pass
+
 print(total)
