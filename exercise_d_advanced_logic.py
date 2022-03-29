@@ -17,6 +17,15 @@ print(even_list)
 print(max(numbers)-min(numbers))
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
+
+i = 0
+while i < len(numbers):
+    if numbers[i] == 2 and numbers[i] == numbers[i+1]:
+        print(numbers[i] == numbers[i+1])
+        break
+    else:
+        i += 1
+
 # 4. Print the sum of the numbers,
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
 #
