@@ -21,15 +21,19 @@ united_kingdom[1]["capital"] = "Cardiff"
 # 2. Create a dictionary for Northern Ireland and add it to the `united_kingdom` list (The capital is Belfast, and the population is 1,811,000).
 united_kingdom.append({
     "name": "Northern Ireland",
-    "population": "1811000",
+    "population": 1811000,
     "capital": "Belfast"
 })
 # 3. Use a loop to print the names of all the countries in the UK.
 
-x = 0
+
 for nation in united_kingdom:
-    nation = united_kingdom[x]["name"]
-    x += 1
-    print(nation)
+    print(nation["name"])
 
 # 4. Use a loop to find the total population of the UK.
+
+popul = 0
+for num in united_kingdom:
+    popul += num["population"]
+
+print(popul)
